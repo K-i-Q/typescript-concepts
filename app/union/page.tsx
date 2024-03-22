@@ -12,7 +12,7 @@ type TAddress = {
 
 type TCustomer = TPerson & TAddress;
 
-export default function IntersectionPage(){
+export default function UnionPage(){
     const handlePrintCustomer = () =>{
         const oneCustomer: TCustomer = {
             name: 'Carlos',
