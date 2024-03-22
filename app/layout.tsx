@@ -23,7 +23,8 @@ export default function RootLayout({
             <li><a href='/intersection'>Intersection Types</a></li>
             <li><a href='/union'>Union Types</a></li>
             <li><a href='/generic'>Generic Types</a></li>
-            <li><a href='/pick-omit'>Pick and Omit Types</a></li>
+            <li><a href='/pick-omit'>Pick and Omit Utility Types</a></li>
+            <li><a href='/record'>Record Utility Type</a></li>
           </ul>
         </nav>
         {children}
