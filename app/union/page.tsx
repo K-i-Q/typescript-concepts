@@ -12,8 +12,8 @@ type TAddress = {
 
 type TCustomer = TPerson & TAddress;
 
-export default function UnionPage(){
-    const handlePrintCustomer = () =>{
+export default function UnionPage() {
+    const handlePrintCustomer = () => {
         const oneCustomer: TCustomer = {
             name: 'Carlos',
             age: '28',
@@ -26,15 +26,15 @@ export default function UnionPage(){
             city: 'São José dos Pinhais',
             zipCode: '999999'
         }
-        console.log({oneCustomer});
-        console.log({anotherCustomer});
+        console.log({ oneCustomer });
+        console.log({ anotherCustomer });
     }
 
     handlePrintCustomer();
 
     return (
-        <div>
-            Union Example
-        </div>
+        <section className="flex flex-col items-center pt-4 h-screen w-full">
+            <h1 className="text-4xl">Union Example</h1>
+        </section>
     )
 }

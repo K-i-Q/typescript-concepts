@@ -16,7 +16,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <nav className="bg-yellow-800 p-3">
+          <ul className="flex space-x-2 justify-between text-white">
+            <li><a href='/'>Home</a></li>
+            <li><a href='/intersection'>Intersection Types</a></li>
+            <li><a href='/union'>Union Types</a></li>
+            <li><a href='/generic'>Generic Types</a></li>
+            <li><a href='/pick-omit'>Pick and Omit Types</a></li>
+          </ul>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }

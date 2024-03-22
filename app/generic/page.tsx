@@ -17,8 +17,8 @@ export default function GenericPage() {
     }
     handlePrintGeneric();
     return (
-        <div>
-            Generic Example
-        </div>
+        <section className="flex flex-col items-center pt-4 h-screen w-full">
+            <h1 className="text-4xl">Generic Example</h1>
+        </section>
     )
 }

@@ -12,8 +12,8 @@ type TAddress = {
 
 type TCustomer = TPerson & TAddress;
 
-export default function IntersectionPage(){
-    const handlePrintCustomer = () =>{
+export default function IntersectionPage() {
+    const handlePrintCustomer = () => {
         const newCustomer: TCustomer = {
             name: 'Carlos',
             age: 28,
@@ -26,8 +26,8 @@ export default function IntersectionPage(){
     handlePrintCustomer();
 
     return (
-        <div>
-            Intersection Example
-        </div>
+        <section className="flex flex-col items-center pt-4 h-screen w-full">
+            <h1 className="text-4xl">Intersection Example</h1>
+        </section>
     )
 }

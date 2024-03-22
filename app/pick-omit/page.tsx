@@ -31,8 +31,8 @@ export default function PickOmitPage() {
 
     handlePrintPerson();
     return (
-        <div>
-            Pick and Omit Example
-        </div>
+        <section className="flex flex-col items-center pt-4 h-screen w-full">
+            <h1 className="text-4xl">Pick and Omit Example</h1>
+        </section>
     )
 }
