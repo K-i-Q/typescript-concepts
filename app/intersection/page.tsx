@@ -11,6 +11,7 @@ type TAddress = {
 }
 
 type TCustomer = TPerson & TAddress;
+// type TCustomer = TPerson | TAddress;
 
 export default function IntersectionPage() {
     const handlePrintCustomer = () => {
